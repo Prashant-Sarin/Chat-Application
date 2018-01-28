@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="right">
+
+    <LinearLayout
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_rectangle_send"
+        android:elevation="4dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:elevation="6dp"
+            android:maxWidth="270dp"
+            android:minWidth="50dp"
+            android:textColor="#3e3e3e"
+            android:textIsSelectable="true"
+            android:textSize="16dp"
+            tools:text="Hey" />
+
+        <TextView
+            android:id="@+id/time_stamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="right"
+            android:textSize="12dp"
+            tools:text="10:24 am" />
+
+    </LinearLayout>
+
+</LinearLayout>
