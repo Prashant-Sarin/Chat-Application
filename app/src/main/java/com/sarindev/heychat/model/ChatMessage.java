@@ -11,18 +11,19 @@ public class ChatMessage {
     private String messageText;
     private String messageUser;
     private String messageTime;
+    private String photoURL;
 
-    SimpleDateFormat dateFormat = new SimpleDateFormat("hh:mm aa");
-
-    public ChatMessage(String messageText) {
-        this.messageText = messageText;
-//        this.messageUser = messageUser;
-
-        messageTime= dateFormat.format(new Date()).toString();
-    }
 
     public ChatMessage() {
     }
+
+    public ChatMessage(String messageText, String messageUser, String photoURL, String messageTime) {
+        this.messageText = messageText;
+        this.messageUser = messageUser;
+        this.photoURL = photoURL;
+        this.messageTime = messageTime;
+    }
+
 
     public String getMessageText() {
         return messageText;
@@ -46,5 +47,13 @@ public class ChatMessage {
 
     public void setMessageTime(String messageTime) {
         this.messageTime = messageTime;
+    }
+
+    public String getPhotoURL() {
+        return photoURL;
+    }
+
+    public void setPhotoURL(String photoURL) {
+        this.photoURL = photoURL;
     }
 }

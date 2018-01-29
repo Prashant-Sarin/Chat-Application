@@ -8,4 +8,6 @@ public class ChatUtils {
 
     public static final int SEND = 0;
     public static final int RECEIVE = 1;
+
+    public static final String ANONYMOUS = "anonymous";
 }
