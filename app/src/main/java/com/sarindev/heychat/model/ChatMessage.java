@@ -56,4 +56,14 @@ public class ChatMessage {
     public void setPhotoURL(String photoURL) {
         this.photoURL = photoURL;
     }
+
+    @Override
+    public String toString() {
+        return "ChatMessage{" +
+                "messageText='" + messageText + '\'' +
+                ", messageUser='" + messageUser + '\'' +
+                ", messageTime='" + messageTime + '\'' +
+                ", photoURL='" + photoURL + '\'' +
+                '}';
+    }
 }

@@ -10,4 +10,5 @@ public class ChatUtils {
     public static final int RECEIVE = 1;
 
     public static final String ANONYMOUS = "anonymous";
+    public static final int RC_SIGN_IN = 123;
 }
